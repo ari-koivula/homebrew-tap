@@ -26,7 +26,6 @@ class FfmpegMini < Formula
   end
 
   depends_on "pkgconf" => :build
-  depends_on "aribb24"
   depends_on "dav1d"
   depends_on "fontconfig"
   depends_on "freetype"
@@ -34,32 +33,20 @@ class FfmpegMini < Formula
   depends_on "harfbuzz"
   depends_on "jpeg-xl"
   depends_on "libass"
-  depends_on "libbluray"
-  depends_on "libsoxr"
-  depends_on "libvidstab"
-  depends_on "libvorbis"
   depends_on "libvpx"
   depends_on "libx11"
   depends_on "libxcb"
-  depends_on "opencore-amr"
   depends_on "openjpeg"
   depends_on "opus"
   depends_on "rav1e"
-  depends_on "rubberband"
   depends_on "sdl2"
-  depends_on "snappy"
   depends_on "speex"
-  depends_on "srt"
   depends_on "svt-av1"
-  depends_on "theora"
   depends_on "x264"
   depends_on "x265"
   depends_on "xz"
-  depends_on "zeromq"
-  depends_on "zimg"
 
   uses_from_macos "bzip2"
-  uses_from_macos "libxml2"
   uses_from_macos "zlib"
 
   on_macos do
@@ -101,8 +88,8 @@ class FfmpegMini < Formula
       --enable-gnutls
       --enable-gpl
       --disable-libaom
-      --enable-libaribb24
-      --enable-libbluray
+      --disable-libaribb24
+      --disable-libbluray
       --enable-libdav1d
       --enable-libharfbuzz
       --enable-libjxl
@@ -110,34 +97,34 @@ class FfmpegMini < Formula
       --enable-libopus
       --enable-librav1e
       --disable-librist
-      --enable-librubberband
-      --enable-libsnappy
-      --enable-libsrt
+      --disable-librubberband
+      --disable-libsnappy
+      --disable-libsrt
       --disable-libssh
       --enable-libsvtav1
       --disable-libtesseract
-      --enable-libtheora
-      --enable-libvidstab
+      --disable-libtheora
+      --disable-libvidstab
       --disable-libvmaf
-      --enable-libvorbis
+      --disable-libvorbis
       --enable-libvpx
       --disable-libwebp
       --enable-libx264
       --enable-libx265
-      --enable-libxml2
+      --disable-libxml2
       --disable-libxvid
       --enable-lzma
       --enable-libfontconfig
       --enable-libfreetype
       --disable-frei0r
       --enable-libass
-      --enable-libopencore-amrnb
-      --enable-libopencore-amrwb
+      --disable-libopencore-amrnb
+      --disable-libopencore-amrwb
       --enable-libopenjpeg
       --enable-libspeex
-      --enable-libsoxr
-      --enable-libzmq
-      --enable-libzimg
+      --disable-libsoxr
+      --disable-libzmq
+      --disable-libzimg
       --disable-libjack
       --disable-indev=jack
     ]
