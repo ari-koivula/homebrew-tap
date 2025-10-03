@@ -26,23 +26,23 @@ class Ffmpeg < Formula
   end
 
   depends_on "pkgconf" => :build
-  depends_on "aom"
+  #depends_on "aom"
   depends_on "aribb24"
   depends_on "dav1d"
   depends_on "fontconfig"
   depends_on "freetype"
-  depends_on "frei0r"
+  #depends_on "frei0r"
   depends_on "gnutls"
   depends_on "harfbuzz"
   depends_on "jpeg-xl"
-  depends_on "lame"
+  #depends_on "lame"
   depends_on "libass"
   depends_on "libbluray"
-  depends_on "librist"
+  #depends_on "librist"
   depends_on "libsoxr"
-  depends_on "libssh"
+  #depends_on "libssh"
   depends_on "libvidstab"
-  depends_on "libvmaf"
+  #depends_on "libvmaf"
   depends_on "libvorbis"
   depends_on "libvpx"
   depends_on "libx11"
@@ -57,12 +57,12 @@ class Ffmpeg < Formula
   depends_on "speex"
   depends_on "srt"
   depends_on "svt-av1"
-  depends_on "tesseract"
+  #depends_on "tesseract"
   depends_on "theora"
-  depends_on "webp"
+  #depends_on "webp"
   depends_on "x264"
   depends_on "x265"
-  depends_on "xvid"
+  #depends_on "xvid"
   depends_on "xz"
   depends_on "zeromq"
   depends_on "zimg"
@@ -109,36 +109,36 @@ class Ffmpeg < Formula
       --enable-ffplay
       --enable-gnutls
       --enable-gpl
-      --enable-libaom
+      --disable-libaom
       --enable-libaribb24
       --enable-libbluray
       --enable-libdav1d
       --enable-libharfbuzz
       --enable-libjxl
-      --enable-libmp3lame
+      --disable-libmp3lame
       --enable-libopus
       --enable-librav1e
-      --enable-librist
+      --disable-librist
       --enable-librubberband
       --enable-libsnappy
       --enable-libsrt
-      --enable-libssh
+      --disable-libssh
       --enable-libsvtav1
-      --enable-libtesseract
+      --disable-libtesseract
       --enable-libtheora
       --enable-libvidstab
-      --enable-libvmaf
+      --disable-libvmaf
       --enable-libvorbis
       --enable-libvpx
-      --enable-libwebp
+      --disable-libwebp
       --enable-libx264
       --enable-libx265
       --enable-libxml2
-      --enable-libxvid
+      --disable-libxvid
       --enable-lzma
       --enable-libfontconfig
       --enable-libfreetype
-      --enable-frei0r
+      --disable-frei0r
       --enable-libass
       --enable-libopencore-amrnb
       --enable-libopencore-amrwb
